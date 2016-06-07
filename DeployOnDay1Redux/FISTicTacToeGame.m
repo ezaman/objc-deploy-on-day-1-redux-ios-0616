@@ -10,7 +10,6 @@
 
 @interface FISTicTacToeGame ()
 
-@property (nonatomic, strong) NSMutableArray *board;
 
 @end
 
@@ -110,7 +109,7 @@
             return self.board [0][1];}
    ///// 2nd column
         if ([self.board [0][2] isEqualToString: self.board[1][2]] && [self.board[0][2] isEqualToString:self.board [2][2]]) {
-                return self.board [0][1];
+                return self.board [0][2];
         }
             
 // DIAGONALS
